@@ -7,7 +7,7 @@ const inputCupom = document.querySelectorAll(".inputCupom"); //input + imagem
 const spanCupom = document.querySelector(".spanCupom");
 const corrigirMargem = document.querySelector(".central .main .filmes");
 
-botaoCupom.addEventListener("click", ()=> { //Clique no cupom
+botaoCupom.addEventListener("click", () => { //Clique no cupom
     spanCupom.innerText = "CUPOM: HTMLNAOELINGUAGEM - (50% OFF) \n*desconto aplicado no subtotal*";
     localStorage.setItem("spanCupom","HTMLNAOELINGUAGEM - (50% OFF)");
     inputCupom.forEach(item => item.setAttribute("hidden",""));
