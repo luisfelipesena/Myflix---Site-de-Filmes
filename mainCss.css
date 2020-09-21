@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1D2226;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    min-width: 100%;
+    min-height: 100px;
+    background-color: #0F1C26;
+}
+
+.header .conteudo {
+    min-width: 71%;
+    display: flex; 
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10px;
+} 
+
+
+.header .conteudo form {
+    position: relative;
+}
+
+.header .conteudo form input {
+    padding-left: 15px; /*espaçamento do placeholder */
+    margin-left: 45px;
+    opacity: 0.8;
+    color: #FDFDFD;
+    font-size: 16px;
+    background-color: #171B1E;
+    border: 0;
+    min-width: 456px;
+    min-height: 50px;
+}
+
+.header .conteudo form button {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.header .conteudo ul{
+    padding: 0;
+    margin-left: 35px;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.header .conteudo ul li {
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+    margin-left: 5vw;
+}
+
+.header .conteudo ul li a {
+    text-decoration: none;
+    color: #FDFDFD;
+    padding-left: 10px;
+    font-size: 15px; 
+}
+
+.header .conteudo > span {
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 15px;
+    color: #FDFDFD;
+    font-size: 15px;  
+    line-height: 20px;
+}
+
+.central {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 10vw;
+    margin-bottom: 50px;
+}
+
+.central .main {
+    min-width: 51vw;
+}
+
+.central .carrinho {
+    position: sticky;
+    top: 15px;
+    max-width: 312px;
+    margin-left: 50px;
+    margin-right: 300px;
+    min-width: 312px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.central .carrinho .sacola {
+    min-width: 100%;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.central .carrinho .sacola span {
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FDFDFD;
+}
+
+.central .carrinho form, .central .carrinho button {
+    margin: 0 16px 0px 10px;
+}
+
+.central .carrinho form span {
+    margin-bottom: 10px;
+}
+
+.central .carrinho .itens {
+    flex: 1;
+    margin: 10px 16px 30px 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.central .carrinho .itens p:nth-child(1) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FDFDFD;
+}
+
+.central .carrinho .itens p:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FDFDFD;
+    margin-bottom: 41px;
+    opacity: 0.8;
+}
+
+.carrinho label span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FDFDFD;
+}
+
+.subtotal {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.central .carrinho label input {
+    border: 0;
+    margin-top:15px;
+    padding-left: 5px;
+    min-width: 100%;
+    min-height: 40px;
+    background: #0B1217;
+    font-weight: normal;
+    color: #FDFDFD;
+    opacity: 0.4;
+}
+
+.central .carrinho label img {
+    position: relative;
+    left: 260px;
+    top: -30px;
+}
+
+.central .carrinho > button {
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 16px;
+    display: none;     /* JavaScript transforma para flex*/
+    align-items: center;
+    justify-content: space-around;
+    background: #E25EBF;
+    min-width: 92%;
+    min-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FDFDFD;
+}
+
+.central .carrinho .itens div {
+    display: flex;
+    align-items: center;
+    color: #FDFDFD;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.central .carrinho .itens div div {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    min-width: 42px;
+    min-height: 63px;
+    background-size: contain;
+}
+
+.central .carrinho .itens div > span:nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 100px;
+    min-width: 40px;
+    max-width: 40px;
+}
+
+.central .carrinho .itens div > span:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.central .carrinho .itens div span button {
+    background-color: white;
+    border: 0;
+    min-width: 19px;
+    min-height: 20px;
+    font-size: 17px;
+}
+
+.central .carrinho > button:hover {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.central .carrinho > button:focus {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.6), rgba(225, 123, 123, 0.6)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}
+
+.central .carrinho .itens .adicionarQtd{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+.central .carrinho .itens .removerQtd {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin-left: 15px;
+}

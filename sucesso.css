@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    min-height: 443px !important;
+    min-width: 784px !important;
+    position: relative; 
+    /* Devido ao .central que possui margin é necessário reposicionar o conteúdo do main*/
+    left: 100px;
+    top: 130px;
+}
+
+.informacoesSucesso {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.informacoesSucesso img {
+    max-width: 82px;
+    max-height: 82px;
+}
+
+.informacoesSucesso h2 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #E8E8E8;
+}
+
+.informacoesSucesso p {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -10px;
+    color: #E8E8E8;
+}
+
+.informacoesSucesso button {
+    background: #E25EBF;
+    border: 0;
+    min-width: 456px;
+    min-height: 56px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FDFDFD;
+    cursor: pointer;
+}
+
+.informacoesSucesso button:hover {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.informacoesSucesso button:focus {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.6), rgba(225, 123, 123, 0.6)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}
+
+.musico {
+    display: flex;
+    position: relative;
+    left: -100px;
+    top: 130px;
+}
